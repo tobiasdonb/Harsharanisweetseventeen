@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chilanka&family=Poppins:wght@400;600;800&family=Salsa&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>Harsharani's Sweet Seventeen</title>
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--  -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="block-1">
+            <div class="block-2">
+                <div class="block-3">
+                    <div class="party-judul">
+                        <p>You're Invited to</p>
+                        <img src="img/Asset 5.png" alt="">
+                        <h1>Harsharani Sweet Seventeen birthday!</h1>
+
+                    </div>
+
+                    <div class="party-detail">
+                        <p>Senin, 15 Januari 2024</p>
+
+                    </div>
+                    <div class="location">
+                        <p>Open Hours: 11am - 10pm (Everyday)
+                        </p>
+                        <p>Location: Jln. Nakula No 88, Denpasar - Bali (in Bale Udang Kuta)</p>
+                        <br>
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/Bale+Udang+Mang+Engking+Kuta/@-8.699908,115.1828,15z/data=!4m6!3m5!1s0x2dd246c5b9a669d1:0xc37c62a5ab69489!8m2!3d-8.699908!4d115.1828!16s%2Fg%2F11g_kskvx?entry=ttu">Klik
+                            Gmaps disini</a>
+                        <br>
+
+
+                    </div>
+                    <div class="thanks">
+                        <p>Thank you!</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="footer">
+        <p>Created by <a href="https://www.instagram.com/tobiasdonbosco/" target="_blank">@tobiasdonbosco</a></p>
+    </div>
+    <div class="audio-container">
+        <audio id="song" autoplay loop>
+            <source src="Audio/Happy Birthday Piano Version.mp3" type="audio/mp3">
+        </audio>
+        <div class="audio-icon-wrapper" style="">
+            <span><i data-feather="volume-2"></i></span>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+    feather.replace()
+</script>
+
+<!-- audio -->
+<script>
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
+    const song = document.querySelector('#song');
+    let isPlaying = false;
+    audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+            song.pause();
+        }
+        else {
+            song.play();
+        }
+
+        isPlaying = !isPlaying;
+    }
+
+</script>
+
+
+</html>

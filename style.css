@@ -1,0 +1,129 @@
+:root {
+  --pink: #f14e95;
+  --bg: #1a1a1a;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --orange: #ffbf00;
+}
+
+body {
+  background-color: #f4e8ff;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: auto;
+  background-image: url(img/8225453.jpg);
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  font-size: 2rem;
+  color: var(--pink);
+  font-family: "Salsa";
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "poppins";
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.block-1 {
+  width: 50vh;
+  padding: 2rem;
+  background-color: white;
+}
+.block-2 {
+  padding: 1.1rem;
+  background-color: white;
+  border: 7px solid;
+  border-color: pink;
+}
+.block-3 {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border: 3px solid;
+  border-color: pink;
+}
+.block-3 img {
+  width: 15rem;
+}
+.party-judul p {
+  font-weight: 600;
+}
+.party-detail {
+  border-radius: 2rem;
+}
+.party-detail p {
+  color: var(--pink);
+  font-weight: 800;
+  font-family: "Chilanka";
+}
+.location a {
+  background-color: var(--pink);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: white;
+  font-family: "poppins";
+}
+.thanks {
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.audio-icon-wrapper {
+  bottom: 2rem;
+  right: 2rem;
+  position: fixed;
+  cursor: pointer;
+  background-color: var(--pink);
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: white;
+}
+.footer {
+  bottom: 2rem;
+  left: 2rem;
+  position: fixed;
+}
+.footer p {
+  font-weight: 800;
+}
+
+/* Media queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+  .block-1 {
+    width: 32rem;
+  }
+}
+
+/* Mobile phone */
+@media (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
